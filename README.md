@@ -20,6 +20,7 @@ This is a personal portfolio website built using HTML, PHP, Bootstrap, CSS, and 
 - MySQL
 - Web Server (Apache)
 # Instalasi
+- Untuk mengkoneksikan ke database silahkan rubah file menjadi .php
 - Jika menggunakan XAMPP, pindahkan folder proyek ini ke dalam folder :
   ```
   c:\xampp\htdocs\
