@@ -1,0 +1,279 @@
+<?php
+session_start();
+include "komponen/koneksi.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Adw</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="gambar/1734525414357.png">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animated -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#home">
+          <img src="gambar/1734525414357.png" alt="Logo" width="30px" height="30px" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <nav class="nav ms-auto text-warning">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#aboutMe">About Me</a>
+            <a class="nav-link" href="#portofolio">Portofolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+  </nav>
+  <!-- end navbar -->
+  
+  <!-- home -->
+  <section class="hero-section shadow-sm" id="home">
+      <div class="container">
+       <div class="row align-items-center">
+          <!-- Gambar Profil -->
+          <div class="col-md-6 mt-3 hero-image" data-aos="fade-up-right" data-aos-duration="2000">
+            <img alt="" src="gambar/home.png" />
+          </div>
+          <!-- Deskripsi Tentang Diri -->
+          <div class="col-md-6 hero-text" data-aos="fade-down-left" data-aos-duration="2000">
+            <h1>
+             Hi Friends, I'm
+             <a href="#aboutMe">
+              Ade Wahyu Warpudin
+             </a>
+            </h1>
+            <p>
+            A student with a strong passion for <b>Software Engineering, Multimedia Systems, and Artificial Intelligence.</b> 
+            With a combination of creativity and technical skills, I focus on creating innovative and functional digital solutions. 
+            I am committed to continuously learning and growing in the tech world, with the goal of making a positive impact through my work.
+            </p>
+            <div class="hero-buttons">
+             <a class="btn btn-warning" href="#portofolio">
+              View Project <i class="bi bi-arrow-right-circle"></i>
+             </a>
+             <a class="btn btn-outline-warning" href="#contact">
+              Contact <i class="bi bi-envelope"></i>
+             </a>
+            </div>
+           </div>
+      </div>
+    </section>
+    <!--end  home-->
+
+  <!-- about me -->
+  <section class="hero-section my-4" id="aboutMe">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Deskripsi Tentang Diri -->
+      <div class="col-lg-6 col-md-12 mt-5 mb-5 hero-text text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+        <h6>
+          <a href="#">
+            About Me
+          </a>
+        </h6>
+        <h1>Who Am I?</h1>
+        <p>
+        My name is <b>Ade Wahyu Warpudin</b>, a <b>Computer Science student</b> with a GPA of <b>3.81</b>. I have a deep interest in <b>Front-End Development, UI/UX, Data Science, and Machine Learning.</b>
+        Currently, I am continuously learning and honing my technical skills to create engaging, user-friendly, and data-driven digital solutions. With a combination of design skills and data analysis, 
+        I focus on building applications that are not only efficient but also provide an exceptional user experience.
+        </p>
+        <!-- Button Project -->
+        <div class="hero-buttons mb-4">
+          <a class="btn btn-warning" href="asset/cv_ku.pdf" download="cv_adew.pdf">
+            Download CV <i class="bi bi-file-earmark-pdf-fill"></i>
+          </a>
+        </div>
+        <!-- Grid Keterampilan -->
+        <div class="skills-section">
+          <p class="mb-4 fw-bold">Keterampilan</p>
+          <div class="row justify-content-center justify-content-lg-start">
+            <!-- Keterampilan -->
+            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in-up" data-aos-duration="2000">
+              <div class="skill-box shadow-sm p-2">
+                <img src="gambar/person-workspace.svg" alt="Skill 1" class="img-fluid">
+              </div>
+              <p class="mt-2 small">Programming</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="400">
+              <div class="skill-box shadow-sm p-2">
+                <img src="gambar/brush.svg" alt="Skill 2" class="img-fluid">
+              </div>
+              <p class="mt-2 small">Desain Grafis</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="600">
+              <div class="skill-box shadow-sm p-2">
+                <img src="gambar/briefcase.svg" alt="Skill 3" class="img-fluid">
+              </div>
+              <p class="mt-2 small">Team Work</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="800">
+              <div class="skill-box shadow-sm p-2">
+                <img src="gambar/book.svg" alt="Skill 4" class="img-fluid">
+              </div>
+              <p class="mt-2 small">Analisa Data</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 text-center" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1000">
+              <div class="skill-box shadow-sm p-2">
+                <img src="gambar/display.svg" alt="Skill 5" class="img-fluid">
+              </div>
+              <p class="mt-2 small">Ms Office</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gambar Profil -->
+      <div class="col-lg-6 col-md-12 mb-5 text-center hero-image" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img alt="Profile Image" src="gambar/1734514875084.png" >
+      </div>
+    </div>
+  </div>
+</section>
+<!--  end about me -->
+    
+  <!-- project -->
+  <section class="bg-warning shadow" id="portofolio">
+    <div class="container py-5">
+      <div class="row mb-2 mt-5">
+        <div class="col text-center">
+          <h3 class="fw-bold">Portofolio</h3>
+          <h2 class="fw-bold">My Project</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- project 1 -->
+        <div class="col-md-4 col-sm-6 mb-5" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="card shadow-sm h-100">
+            <div class="card-img-container">
+              <img src="gambar/projek1.png" class="card-img-top" alt="Project 1">
+            </div>
+            <div class="card-body">
+              <p>Kuningan Beu</p>
+              <p class="card-text">A tourism ticket reservation website, <b>"Kuningan Beu"</b>, designed to promote tourist destinations in Kuningan, West Java.
+              Key features include destination information, pricing details, and online ticket booking, with a responsive and user-friendly design.</p>
+            </div>
+          </div>
+        </div>
+        <!-- project 2 -->
+        <div class="col-md-4 col-sm-6 mb-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+          <div class="card shadow-sm h-100">
+            <div class="card-img-container">
+              <img src="gambar/project2.png" class="card-img-top" alt="Project 2">
+            </div>
+            <div class="card-body">
+              <p>Sayembara Logo Pariwisata Kuningan</p>
+              <p class="card-text">Designing the official logo to promote tourism in Kuningan Regency, West Java. The logo was crafted to represent the natural beauty, 
+                local culture, and identity of Kuningan as a tourist destination.</p>
+            </div>
+          </div>
+        </div>
+        <!-- project 3 -->
+        <div class="col-md-4 col-sm-6 mb-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+          <div class="card shadow-sm h-100">
+            <div class="card-img-container">
+              <img src="gambar/projek3.jpg" class="card-img-top" alt="Project 2">
+            </div>
+            <div class="card-body">
+              <p>The Bandung City Information</p>
+              <p class="card-text">Website is designed to provide an overview of the history, geography, and tourist destinations in Bandung, West Java. 
+                Featuring a simple and informative design, the website aims to introduce Bandung as the largest metropolitan city and the capital of West Java Province, 
+                famously known as the "Paris of Java."</p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- contact me -->
+  <section class="container my-5 py-5" id="contact">
+    <div class="row mb-2 mt-5">
+        <div class="col text-center">
+          <p class="fw-bold">Contact Me</p>
+          <h4 class="">Good a project idea? Let's connect and make it happen!</h4>
+        </div>
+      </div>
+      <div class="row">
+          <!-- Form Kontak -->
+          <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="2000">
+              <div class="p-4 bg-section rounded shadow">
+                  <form method="POST" id="contactForm" action="komponen/simpanPesan.php">
+                  <?php include "komponen/alert.php"; ?>
+                      <div class="mb-3">
+                          <input type="text" name="nama" class="form-control"  placeholder="Full Name" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="email" name="email" class="form-control" placeholder="Email" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="text" name="subjek" class="form-control" placeholder="Subject" required>
+                      </div>
+                      <div class="mb-3">
+                          <textarea name="pesan" class="form-control" rows="4" placeholder="Message" required></textarea>
+                      </div>
+                      <button type="submit" name="submit" class="btn btn-send w-100 mt-2">Send Message  <i class="bi bi-box-arrow-right"></i></button>
+                  </form>
+              </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+            <div class="p-4 bg-section rounded shadow text-center">
+              <h4 class="fw-bold">Follow Me</h4>
+              <div class="d-flex justify-content-center mt-4">
+                <a href="https://www.instagram.com/adx.www" target="_blank" class="mx-3 fs-3 text-dark">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/ad.whyuu.5" target="_blank" class="mx-3 fs-3 text-dark">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/qr/M4LZMGTHQG6FH1" target="_blank" class="mx-3 fs-3 text-dark">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ade-wahyu-warpudin-749a06272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="mx-3 fs-3 text-dark">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+          
+              <!-- Gambar di bawah Follow Me -->
+              <div class="row mt-5 my-5 py-3">
+                <!-- Gambar 1 -->
+                <div class="col-3 mb-2">
+                  <img src="gambar/aktiv1.jpg" class="img-fluid rounded" alt="Kegiatan 1">
+                </div>
+                <!-- Gambar 2 -->
+                <div class="col-3 mb-2">
+                  <img src="gambar/aktiv2.jpg" class="img-fluid rounded" alt="Kegiatan 2">
+                </div>
+                <!-- Gambar 3 -->
+                <div class="col-3 mb-2">
+                  <img src="gambar/aktiv3.jpg" class="img-fluid rounded" alt="Kegiatan 3">
+                </div>
+                <!-- Gambar 4 -->
+                <div class="col-3 mb-2">
+                  <img src="gambar/aktiv5.jpg" class="img-fluid rounded" alt="Kegiatan 4">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <footer class="footer text-center py-1">
+      <img src="gambar/1734525414357.png" height="50" width="50"><p>© 2024 Web Porfo. Semua Hak Dilindungi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({});
+    </script>
+</body>
+</html>

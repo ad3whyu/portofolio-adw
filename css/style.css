@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.nav {
+  display: flex;
+  gap: 10px;
+}
+section {
+  scroll-behavior: smooth;
+}
+.nav-link {
+  color: #f3c60c;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transisi lembut */
+}
+.nav-link:focus {
+  outline: none; /* Hilangkan efek fokus default */
+}
+.nav-link:hover {
+  color: #000000; /* Warna saat hover */
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.hero-image img {
+  max-width: 100%;
+}
+.hero-text h1 a {
+  color: #f3c60c;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h1 {
+  font-weight: bold;
+}
+h6 a {
+  color: #f3c60c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi transformasi dan bayangan */
+}
+.card:hover {
+  transform: translateY(-10px); /* Kartu bergerak naik 10px */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+p {
+  font-size: 1rem;
+  color: #f3c60c;
+}
+.card-text {
+  color: #6c757d;
+  font-size: 15px;
+}
+.skill-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.skill-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.skill-box:hover {
+  background-color: #ffc107;
+  transform: scale(1.2); /* Efek membesar */
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-section h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.section-title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.bg-section {
+  background-color: #ffc107;
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn-send {
+  background-color: #000;
+  color: #fff;
+}
+.img-fluid {
+  height: 100px;
+  object-fit: cover;
+}
+
+.img-fluid.rounded {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid.rounded:hover {
+  transform: scale(1.1);
+}
+.footer {
+  background-color: #000;
+  color: #f3c60c;
+}
+.card-img-container {
+  width: 100%;
+  height: 200px; /* Tentukan tinggi tetap untuk gambar */
+  overflow: hidden; /* Potong bagian gambar yang melebihi ukuran */
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Buat gambar menyesuaikan area tanpa distorsi */
+}
+
+/* Responsif untuk layout grid */
+@media (max-width: 768px) {
+  #portofolio .card {
+    width: 100%; /* Lebar penuh pada perangkat kecil */
+  }
+}
