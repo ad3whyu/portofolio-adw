@@ -43,8 +43,9 @@ This is a personal portfolio website built using HTML, PHP, Bootstrap, CSS, and 
 ┣ 📂gambar  # Menyimpan file gambar<br>
 ┣ 📂js  # File JavaScript<br>
 ┣ 📂komponen # File PHP untuk koneksi dan simpan pesan<br>
-┗ 📜index.php   # Titik masuk utama<br>
-┗ 📜README.md   # Dokumentasi proyekp</p>
+┗ 📜README.md   # Dokumentasi proyekp<br>
+┗ 📜index.php   # Titik masuk utama</p>
+
 
 # Kontak
 Untuk pertanyaan atau masukan, silakan hubungi saya di email adwahyuwrpdn@gmail.com
