@@ -8,6 +8,10 @@ body {
   display: flex;
   gap: 10px;
 }
+.navbar .nav {
+  overflow-x: auto;
+  white-space: nowrap;
+}
 section {
   scroll-behavior: smooth;
 }
